@@ -6,7 +6,7 @@ Inventory management app: a Next.js dashboard backed by two Express services (au
 
 - **Frontend:** Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4, TanStack Query
 - **Backend:** Node.js 22, Express 5, TypeScript, Sequelize 6, PostgreSQL 17
-- **Tooling:** ESLint, Prettier, Jest + Supertest, Vitest, esbuild
+- **Tooling:** ESLint, Prettier, Jest + Supertest, Vitest, esbuild, GitHub Actions
 
 ## Architecture
 
