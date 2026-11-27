@@ -4,8 +4,8 @@ import constMessages from '../utils/constants';
 
 const FIFTEEN_MINUTES = 15 * 60 * 1000;
 
-// shortcut: the in-memory store is per process, so switch to a shared
-// store (e.g. Redis) before running more than one instance
+// The in-memory store is per process, so switch to a shared store
+// (e.g. Redis) before running more than one instance
 const createLimiter = (
   limit: number,
   message: string,

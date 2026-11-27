@@ -96,6 +96,8 @@ npm install
 npm run dev                 # http://localhost:3000
 ```
 
+`npm run dev` in `backend` starts both services from one terminal on macOS and Linux. On Windows, run `npm run dev:auth` and `npm run dev:product` in separate terminals.
+
 The seed creates two users. Their password is `SEED_USER_PASSWORD` from `backend/.env`.
 
 | Email               | Role  | Can                                     |

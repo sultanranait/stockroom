@@ -41,8 +41,9 @@ export const startServer = async (app: Express, port: number, name: string) => {
       logger.info(`${name} service listening on port ${port}`);
     });
   } catch (error) {
+    // Connection errors can have an empty message, the stack carries the name
     logger.error(`${name} service failed to start`, {
-      error: (error as Error).message,
+      error: error instanceof Error ? error.stack : error,
     });
     process.exit(1);
   }
